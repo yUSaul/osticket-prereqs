@@ -52,8 +52,7 @@ Using localhost 127.0.0.1 and getting an IIS webpage means that IIS has been suc
 <br />
 
 <p>
-<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/05876f79-6f0b-4665-9a66-c0aeab534af4
-"/>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/05876f79-6f0b-4665-9a66-c0aeab534af4"/>
 </p>
 <p>
 Use the executables to Install PHP manager, AMD Rewrite module, and VC_redist. 
