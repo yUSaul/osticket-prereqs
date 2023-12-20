@@ -55,7 +55,7 @@ Using localhost 127.0.0.1 and getting an IIS webpage means that IIS has been suc
 <img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/05876f79-6f0b-4665-9a66-c0aeab534af4"/>
 </p>
 <p>
-Use the executables to Install PHP manager, AMD Rewrite module, and VC_redist. 
+Use the executables to Install PHP manager, AMD Rewrite module, and VC_redist.  Install MySQL.  Typical Setup.  Launch the Instance Configuration Wizard.  Standard Configuration.  Password1 for root password.  OSTicket will use the MySQL database to store ticket data. 
 </p>
 <br />
 
@@ -68,25 +68,60 @@ Create the directory C:\PHP.  Download the PHP zip file and extract the contents
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/e7f8fb3d-548f-4bdd-8061-4090477a188a"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Open IIS and register PHP.  Reload IIS after registering.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/9f580563-b1bb-421e-8b39-41646b8a6cde"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Download osTicket.  Extract and copy “upload” folder to c:\inetpub\wwwroot.  This is our IIS server folder.  Within c:\inetpub\wwwroot, rename “upload” to “osTicket”.
+<br />
+
+<p>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/36282fda-5b4a-415e-a23b-23e425401c93"/>
+</p>
+<p>
+Go back to IIS, and restart the server.  Then go to Sites -> Default Web Site -> osTicket.  Click browse *.80 on the right.
+</p>
+<br />
+
+
+<p>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/fb1f711b-faa6-4bb8-ac30-05c41efc926f"/>
+</p>
+<p>
+Note that some of the extensions are disabled.  Go back to IIS, Sites -> Default Web Site -> osTicket.  Double-click PHP Manager.  Click “Enable or disable an extension”.  Enable: php_imap.dll.  Enable: php_intl.dll.  Enable: php_opcache.dll.  Refresh the osTicket site in your browser, and observe the changes.
+</p>
+<br />
+
+
+<p>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/36282fda-5b4a-415e-a23b-23e425401c93"/>
+</p>
+<p>
+Go back to IIS, and restart the server.  Then go to Sites -> Default Web Site -> osTicket.  Click browse *.80 on the right.
+</p>
+<br />
+
+
+<p>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/36282fda-5b4a-415e-a23b-23e425401c93"/>
+</p>
+<p>
+Go back to IIS, and restart the server.  Then go to Sites -> Default Web Site -> osTicket.  Click browse *.80 on the right.
+</p>
+<br />
+
+
+<p>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/36282fda-5b4a-415e-a23b-23e425401c93"/>
+</p>
+<p>
+Go back to IIS, and restart the server.  Then go to Sites -> Default Web Site -> osTicket.  Click browse *.80 on the right.
 </p>
 <br />
