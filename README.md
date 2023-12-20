@@ -25,7 +25,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Download and install the Rewrite Module 
 - Create the directory C:\PHP, then download PHP and unzip the contents into C:\PHP
 - Download and install VC_redist.x86.exe
-- Download and install MySQL 5.5.62
+- Download and install MySQL 
 - Download and install HeidiSQL
   
 <h2>Installation Steps</h2>
