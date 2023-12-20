@@ -26,6 +26,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Create the directory C:\PHP, then download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP
 - Download and install VC_redist.x86.exe
 - Download and install MySQL 5.5.62
+- Download and install HeidiSQL
   
 <h2>Installation Steps</h2>
 
@@ -101,27 +102,51 @@ Note that some of the extensions are disabled.  Go back to IIS, Sites -> Default
 
 
 <p>
-<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/36282fda-5b4a-415e-a23b-23e425401c93"/>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/12faf829-94f9-4e41-98e3-0361c7ddf768"/>
 </p>
 <p>
-Go back to IIS, and restart the server.  Then go to Sites -> Default Web Site -> osTicket.  Click browse *.80 on the right.
-</p>
-<br />
-
-
-<p>
-<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/36282fda-5b4a-415e-a23b-23e425401c93"/>
-</p>
-<p>
-Go back to IIS, and restart the server.  Then go to Sites -> Default Web Site -> osTicket.  Click browse *.80 on the right.
+Go to C:\inetpub\wwwroot\osTicket\include and look for ost-sampleconfig.php.  Rename this to ost-config.php.  Right click the file and then go to properties -> security -> advanced and disable inheritance.  Add a permission entry with Everyone as principal, giving Full control.
 </p>
 <br />
 
 
 <p>
-<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/36282fda-5b4a-415e-a23b-23e425401c93"/>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/e0f6f7e7-61af-424a-a97d-ea6a9642475e"/>
 </p>
 <p>
-Go back to IIS, and restart the server.  Then go to Sites -> Default Web Site -> osTicket.  Click browse *.80 on the right.
+Continue in the browser by configuring osTicket.  Install HeidiSQL prior to clicking Install Now on the browser.
+</p>
+<br />
+
+
+<p>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/6df4b909-e14e-4cc6-962f-d5d353643306"/>
+</p>
+<p>
+In HeidiSQL create a new connection with name root and the previously created SQL password.  Right click on Unnamed, go to Create New -> Database.  Name it osTicket. 
+</p>
+<br />
+
+<p>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/0aaba12a-6dc5-4a3b-bebc-c64fb63ca3e3"/>
+</p>
+<p>
+Finish
+</p>
+<br />
+
+<p>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/0aaba12a-6dc5-4a3b-bebc-c64fb63ca3e3"/>
+</p>
+<p>
+In HeidiSQL create a new connection with name root and the previously created SQL password.
+</p>
+<br />
+
+<p>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/0aaba12a-6dc5-4a3b-bebc-c64fb63ca3e3"/>
+</p>
+<p>
+In HeidiSQL create a new connection with name root and the previously created SQL password.
 </p>
 <br />
