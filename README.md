@@ -120,7 +120,7 @@ Continue in the browser by configuring osTicket.  Install HeidiSQL prior to clic
 
 
 <p>
-<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/6df4b909-e14e-4cc6-962f-d5d353643306"/>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/0aaba12a-6dc5-4a3b-bebc-c64fb63ca3e3"/>
 </p>
 <p>
 In HeidiSQL create a new connection with name root and the previously created SQL password.  Right click on Unnamed, go to Create New -> Database.  Name it osTicket. 
@@ -128,10 +128,10 @@ In HeidiSQL create a new connection with name root and the previously created SQ
 <br />
 
 <p>
-<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/0aaba12a-6dc5-4a3b-bebc-c64fb63ca3e3"/>
+<img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/6df4b909-e14e-4cc6-962f-d5d353643306"/>
 </p>
 <p>
-Finish
+Finish filling out the rest of the osTicket page on your browser with the SQL server info, then click Install Now.
 </p>
 <br />
 
@@ -139,7 +139,7 @@ Finish
 <img src="https://github.com/yUSaul/osticket-prereqs/assets/140694677/0aaba12a-6dc5-4a3b-bebc-c64fb63ca3e3"/>
 </p>
 <p>
-In HeidiSQL create a new connection with name root and the previously created SQL password.
+osTicket is now succesfully installed.  To browse to your help desk login page: http://localhost/osTicket/scp/login.php.  End Users osTicket URL: http://localhost/osTicket.  Now set Permissions to Read and Read & Execute only in: C:\inetpub\wwwroot\osTicket\include\ost-config.php -> properties -> security -> advanced.
 </p>
 <br />
 
